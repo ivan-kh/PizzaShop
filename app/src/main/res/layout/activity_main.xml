@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оберіть піцу:"
+            android:textSize="24sp"
+            android:paddingBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioPizza1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Піца 1"
+                android:text="Піцца Моцарелла -> 150 грн"/>
+
+            <RadioButton
+                android:id="@+id/radioPizza2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Піца 2"
+                android:text="Піцца Гаваї -> 120 грн"/>
+
+            <RadioButton
+                android:id="@+id/radioPizza3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Піца 3"
+                android:text="Піцца Грибна -> 170 грн" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оберіть розмір:"
+            android:textSize="24sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Маленька -> ціна піци при замовленні"/>
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Середня -> +20 грн"/>
+
+            <RadioButton
+                android:id="@+id/radioLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Велика -> +50 грн"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додаткові інгредієнти:"
+            android:textSize="24sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сир(додатковий) -> +20 грн"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxMeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="М'ясо -> +30 грн"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVeggies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Овочі -> +15 грн"/>
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Замовити"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
